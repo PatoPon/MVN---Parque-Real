@@ -1,0 +1,188 @@
+
+:root {
+    --primary-color: #3c375c; /* Cor mais escura */
+    --secondary-color: #b58c3b; /* Cor mais escura */
+    --tertiary-color: #a89950; /* Cor mais escura */
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    z-index: -5;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6600; /* Altere a cor para a cor desejada quando passar o mouse */
+}
+
+/* Style the grid */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que o grid seja distribuído em várias linhas */
+    justify-content: center; /* Adiciona espaço entre as colunas */
+}
+
+.row img {
+    opacity: 0.9;
+    cursor: pointer;
+    max-width: calc(25% - 20px); /* Defina a largura máxima das imagens com margens */
+    margin: 5px; /* Adicione margem entre as imagens */
+    border: 2px solid;
+}
+
+.row img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    position: relative;
+    display: none;
+    text-align: center;
+    height: 70; /* Define a altura da div como 100% da altura da janela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+.container img {
+    border: 2px solid;
+}
+
+#expandedimg {
+    background-color: #333;
+    display: none;
+    padding: 5px
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 140px;
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #333;
+    padding: 5px;
+    border: 2px solid hsl(0, 3%, 65%);
+}
+
+/* Closable button inside the image */
+.closebtn {
+position: absolute;
+right: 145px;
+top: 5px;
+color: #f80b0b;
+font-size: 35px;
+cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 42%; /* Posiciona os botões verticalmente no centro da imagem */
+    width: auto;
+    padding: 16px;
+    color: #ee1111;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1; /* Coloca os botões na frente da imagem */
+}
+
+.prev {
+    left: 90px; /* Posiciona o botão "Anterior" à esquerda da imagem */
+}
+
+.next {
+    right: 90px; /* Posiciona o botão "Próximo" à direita da imagem */
+}
+
+p {
+    color: white;
+    text-shadow: #333;
+    flex: 1;
+    font-size: 16px; /* Tamanho da fonte do texto na caixa */
+}
+
+.logo img {
+    max-width: 100px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Adicione a sombra aqui */
+}
+
+/* Estilos para o conteúdo principal */
+.titulo {
+    padding-left: 42.5%;
+    padding-top: 0px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-texto {
+    text-shadow: #333;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    flex: 1
+}
+
+.footer-imagem {
+    flex-direction: column;
+}
+
+.footer-imagem img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    max-width: 500px;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}

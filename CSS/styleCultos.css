@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #3c375c; /* Cor mais escura */
+    --secondary-color: #c7a45e; /* Cor mais escura */
+    --tertiary-color: #a89950; /* Cor mais escura */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    z-index: -5;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6600; /* Altere a cor para a cor desejada quando passar o mouse */
+}
+
+.horarios-de-cultos {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    margin-top: 51px;
+    margin-bottom: 51.7px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.horarios-de-cultos h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.horarios-de-cultos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.horarios-de-cultos li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.horarios-de-cultos strong {
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    text-shadow: #333;
+    flex: 1;
+    font-size: 16px; /* Tamanho da fonte do texto na caixa */
+}
+
+.logo img {
+    max-width: 100px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Adicione a sombra aqui */
+}
+
+/* Estilos para o conteúdo principal */
+.titulo {
+    padding-left: 42.5%;
+    padding-top: 0px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-texto {
+    text-shadow: #333;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    flex: 1
+}
+
+.footer-imagem {
+    flex-direction: column;
+}
+
+.footer-imagem img {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    max-width: 500px;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+#rodape {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
